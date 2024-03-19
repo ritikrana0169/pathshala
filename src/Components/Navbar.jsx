@@ -14,7 +14,7 @@ function Navbar() {
     <div className="Navbar">
       <div className="logo">
         <Link to="/" onClick={toggleMenu}>
-          Logo
+          Pathshala
         </Link>
       </div>
       <Hamburger

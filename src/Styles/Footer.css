@@ -1,0 +1,133 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+    margin: auto;
+}
+
+.footer >div:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+}
+
+.paraAddress{
+    color: var(--footer-fontColor)
+}
+
+.footerHeading{
+    color: var(--bgcolor);
+    font-size: 1.5rem;
+    font-style: initial;
+    margin-bottom: 1.5rem;
+}
+
+.community{
+    width: 100%;
+}
+
+.community a{
+      display: block;
+      color: rgb(0,0,0);
+      transition: 1s;
+      margin-top: 0.5rem;
+}
+
+.community a:hover{
+    color: var(--hover-color);
+}
+
+.contact{
+    width: 40%;
+    /* border: 2px solid red; */
+}
+
+.contactFrom{
+    width: 90%;
+}
+
+.nameDetails{
+    display: flex;
+    /* border: 2px solid blue; */
+}
+
+.contactFrom label{
+    display: block;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    font-size: 1.15rem;
+    color: var(--footer-fontColor);
+}
+
+.contactFrom input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+    /* height: 30%; */
+}
+
+.contactFrom input:focus{
+    outline: none;
+}
+
+.contactFrom textarea{
+    height: 10vh;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.contactFrom textarea:focus{
+    outline: none;
+}
+
+.submitbtn{
+      background-color: var(--bgcolor);
+      color: white;
+      border: none;
+      border-radius: 0.75rem;
+      padding: 5px 1rem;
+      font-size: 1rem;
+      transition: 1s;
+      margin-top: 1rem;
+}
+
+.submitbtn:hover{
+    cursor: pointer;
+    background-color: var(--hover-color);
+}
+
+
+@media (max-width: 1024px) {
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        /* border: 2px solid red; */
+    }
+     
+    .footer > div:nth-child(1){
+        /* border: 2px solid red; */
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+     }
+
+     .community{
+        margin: 2rem 0%;
+     }
+
+     .contact{
+        width: 100%;
+     }
+
+     .contactFrom label{
+        margin-bottom: 1rem;
+        margin-top: 0.5rem;
+     }
+
+     .nameDetails {
+        display: inline;
+     }
+
+}

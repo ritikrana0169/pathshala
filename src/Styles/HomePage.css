@@ -1,6 +1,6 @@
 .home{
     width: 90%;
-    margin: auto;
+    margin: 3rem auto;
 }
 
 .info{
@@ -9,34 +9,52 @@
     padding: 60px 50px;
 }
 
-.info > div:nth-child(1) > h3{
+.quote{
     font-size: 2rem;
+    font-style: italic;
 }
 
-.info > div:nth-child(1) > h3 > span{
+.quote > span{
      color: var(--bgcolor);
 }
 
-.info > div:nth-child(1) > p{
-    font-size: 1.1rem;
-    margin-top: 20px;
+.aboutus {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
 }
 
-.infobtn{
-    background-color: var(--bgcolor);
-    color: white;
+.aboutus > div{
+    margin-bottom: 2rem;
+}
+
+.aboutus > div:nth-child(2) h1, .aboutus > div:nth-child(2) h3{
+    font-family: var(--homePage--font-family);
+    font-size: 3rem;
+    color: var(--homePage-textColor);
+}
+
+.aboutUsBtn{
     border: none;
-    font-size: 1.5rem;
-    padding: 10px;
-    border-radius: 5px;
+    color: var(--homePage-textColor);
+    background-color: var(--bgcolor);
+    padding: 1rem;
+    border-radius: 1rem;
+    text-decoration: underline;
     transition: 1s;
+    font-size: 1rem;
 }
 
-.infobtn:hover{
+.aboutUsBtn:hover{
+    background-color: var(--btn-transitionColor);
     cursor: pointer;
-    color: var(--btn-transitionColor);
 }
 
+.safetyFirst{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 @media (max-width: 1024px) {
     
@@ -47,5 +65,9 @@
     }
     .info h3{
         margin-top: 2rem;
+    }
+
+    .aboutus {
+        flex-direction: column-reverse;
     }
 }

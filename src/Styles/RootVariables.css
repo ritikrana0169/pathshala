@@ -1,6 +1,12 @@
 :root {
     --dark-color: 	#000000;
     --navbar-bgcolor: rgb(53,184,190);
+    --activeLink-color: rgb(5,36,79);
     --bgcolor: rgb(53,184,190);
     --btn-transitionColor: orange;
+    --home-bgcolor: rgb(166,24,13);
+    --footer-fontColor: rgb(5,36,79);
+    --hover-color: orange;
+    --homePage--font-family: Madefor "Helvetica Neue" Helvetica Arial;
+    --homePage-textColor: rgb(5,36,79);
 }

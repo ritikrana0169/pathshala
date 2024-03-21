@@ -2,7 +2,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--navbar-bgcolor);
+    background-color: var(--blur-bg);
+    /* background-color: transparent; */
+    backdrop-filter: blur(10px);
     color: white;
     padding: 1rem 6rem;
     width: 100%;
@@ -12,7 +14,7 @@
   
   .logo a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 1.5rem;
   }
 
@@ -23,13 +25,6 @@
   .hamburger-react {
     display: none;
     cursor: pointer;
-  }
-  
-  .bar {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 3px 0;
   }
 
   .nav-links ul {
@@ -47,7 +42,7 @@
   
   .nav-links a {
     text-decoration: none;
-    color: white;
+    color: black;
   }
 
   .nav-links a:active{
@@ -57,13 +52,16 @@
   .nav-links {
     display: flex;
   }
+
+  .hamburger-react{
+    color: black;
+  }
   
   @media (max-width: 1024px) {
 
     .Navbar{
         flex-direction: row-reverse;
         justify-content: space-between;
-        /* border: 2px solid red; */
         padding: 0px 1rem;
     }
 
@@ -80,28 +78,32 @@
       position: absolute;
       top: 60px;
       left: 0;
-      background-color: var(--navbar-bgcolor);
+      /* background-color: var(--navbar-bgcolor); */
+      /* backdrop-filter: blur(10px); */
       padding: 10px 20px;
       text-align: left;
+      /* border: 2px solid red; */
+      width: 100vw;
+      height: 100vh;
+      background-color: rgb(255,255,255);
     }
   
     .nav-links.open {
       display: flex;
-      width: 100vw;
-      height: 90vh;
-      /* align-items: center; */
-      /* border: 2px solid red; */
-      /* vertical-align: middle; */
+      /* width: 100vw;
+      height: 90vh; */
     }
     
     .nav-links ul {
         flex-direction: column;
-        font-size: larger;
+        font-size: 1.5rem;
         margin: auto;
+        /* border: 2px solid red; */
     }
   
     .nav-links ul li {
       margin-bottom: 10px;
+      /* border: 2px solid red; */
     }
   }
   

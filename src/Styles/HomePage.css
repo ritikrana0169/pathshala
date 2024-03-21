@@ -1,31 +1,36 @@
-.home{
-    width: 90%;
-    margin: 3rem auto;
-}
+/* .home{
+    margin: auto;
+} */
 
-.info{
+.col-rev{
     display: flex;
-    justify-content: space-between;
-    padding: 60px 50px;
-}
-
-.quote{
-    font-size: 2rem;
-    font-style: italic;
-}
-
-.quote > span{
-     color: var(--bgcolor);
+    flex-direction: row-reverse;
 }
 
 .aboutus {
     display: flex;
-    justify-content: space-between;
-    /* align-items: center; */
+    width: 95%;
+    margin: 1.5rem auto auto auto;
 }
 
-.aboutus > div{
-    margin-bottom: 2rem;
+.aboutus > div:nth-child(1){
+    width: 70%;
+}
+
+.aboutus > div:nth-child(1) > img{
+    width: 100%;
+}
+
+.aboutus > div:nth-child(2){
+    width: 30%;
+    /* text-align: center; */
+    /* border: 2px solid red; */
+    background-color: var(--bgcolor);
+}
+
+.aboutus > div:nth-child(2) > div{
+    width: 70%;
+    margin: auto;
 }
 
 .aboutus > div:nth-child(2) h1, .aboutus > div:nth-child(2) h3{
@@ -50,24 +55,61 @@
     cursor: pointer;
 }
 
-.safetyFirst{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.safety-img{
+    margin: 0 auto auto auto;
+}
+
+.safety-img > div:nth-child(1) {
+    width: 60%;
+    background-color: var(--blur-bg);
+    /* align-content: center; */
+    height: 80vh;
+}
+
+.safety-img > div:nth-child(2){
+    width: 40%;
+    text-align: center;
+}
+
+.safety-img > div:nth-child(1) > div{
+    width: 60%;
+    /* margin: 30% auto auto auto; */
+}
+
+.safety-img > div:nth-child(1) > div > img{
+    width: 100%;
 }
 
 @media (max-width: 1024px) {
-    
-    .info{
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-    .info h3{
-        margin-top: 2rem;
-    }
 
     .aboutus {
-        flex-direction: column-reverse;
+        margin: 0px auto auto auto;
+        flex-direction: column;
+        width: 100%;
+        /* border: 2px solid red; */
+    }
+
+    .aboutus > div:nth-child(1){
+        width: 100%;
+        /* border: 2px solid red; */
+    }
+
+    .aboutus > div:nth-child(1) > img{
+        background-repeat: no-repeat;
+        background-size: contain;
+        }
+    .aboutus > div:nth-child(2){
+        width: 100%;
+        /* text-align: center; */
+        /* border: 2px solid red; */
+        background-color: var(--bgcolor);
+    }
+    .aboutus > div:nth-child(2) >div {
+        width: 100%;
+        text-align: center;
+       
+    }
+    .aboutus >div:nth-child(2){
+        font-size: small;
     }
 }

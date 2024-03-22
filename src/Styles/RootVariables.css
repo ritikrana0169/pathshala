@@ -1,3 +1,4 @@
+@import url(https://db.onlinewebfonts.com/c/f7d1b2995a6dff7abcda304d226aa67d?family=Helvetica+W01+Bold);
 :root {
     --dark-color: 	#000000;
     --navbar-bgcolor: rgb(53,184,190);
@@ -10,4 +11,10 @@
     --homePage--font-family: Madefor "Helvetica Neue" Helvetica Arial;
     --homePage-textColor: rgb(5,36,79);
     --blur-bg: rgba(53, 183, 190, 0.338);
+    --style-color1:rgb(228,249,255);
+    --style-color2:rgb(166,24,13);
+    --style-color3: rgb(255,232,225);
+    --style-color4:rgb(5,36,79);
+    --font-color1:black;
+    --font--color2:white;
 }

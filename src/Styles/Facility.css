@@ -1,0 +1,183 @@
+.learning{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    margin: 2rem auto;
+    height: 100vh;
+}
+.learning > div:nth-child(1){
+    background-color: var(--style-color1);
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.learning > div:nth-child(1) > div{
+    width: 70%;
+    text-align: left;
+}
+.learning > div:nth-child(1) > div h1{
+    text-align: center;
+    font-size: 5rem;
+    margin: 0 0 2rem 0 ;
+}
+
+
+.learning > div:nth-child(2){
+    width: 50%;
+}
+/* .learning > div:nth-child(2) div{
+    width: 90%;
+    margin: auto;
+} */
+.learning > div:nth-child(2) img{
+    width: 100%;
+    /* height: 80vh; */
+    height:100vh;
+}
+
+
+
+.facility{
+
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 5rem auto auto auto;
+}
+.facility > div:nth-child(1){
+    background-color: var(--style-color2);
+    color: var(--font--color2);
+    width: 26%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.facility > div:nth-child(1) div{
+    /* margin-top: 7rem; */
+    width: 50%;
+    
+}
+
+.facility > div:nth-child(2){
+    width: 26%;
+}
+
+.facility > div:nth-child(2) div{
+    width: 100%;
+}
+.facility > div:nth-child(2) div > img{
+    width: 100%;
+}
+
+
+.facility > div:nth-child(3){
+    background-color: var(--style-color3);
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:21px ;
+}
+
+.facility > div:nth-child(3) div{
+    width: 80%;
+
+}
+.marginTop{
+    margin-top: 0.5rem;
+}
+.blue >div:nth-child(1){
+
+    background-color: var(--style-color4);
+}
+.marginBottom{
+    margin-bottom: 10rem;
+}
+
+
+@media (max-width: 1024px) {
+    .learning{
+        width: 100%;
+        flex-direction:column-reverse;
+        height: auto;
+        margin: 0;
+    }
+    .learning > div:nth-child(1){
+        margin-top: 0px;
+        width: 100%;
+    }
+    .learning > div:nth-child(2){
+        width: 100%;
+        margin-top: 0px;
+        background-color: var(--style-color3);
+    }
+    .learning > div:nth-child(2) > div{
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+    .learning > div:nth-child(2) img{
+        width: 100vw;
+        height: auto;
+    }
+    .learning > div:nth-child(1) > div h1{
+        text-align: left;
+        font-size: 3rem;
+        margin: 40px 0 2rem 0 ;
+    }
+    
+    .learning > div:nth-child(1) > div p{
+        text-align: left;
+        /* font-size: 3rem; */
+        margin: 0px 0 4rem 0 ;
+    }
+    
+    .facility{
+        margin-top: 20px;
+       width: 100%;
+       flex-direction: column;
+    }
+    .facility > div:nth-child(1){
+        text-align: center;
+        width: 100%;
+    }
+    
+    .facility > div:nth-child(2){
+        width: 100%;
+    }
+    .facility > div:nth-child(2) div{
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .facility > div:nth-child(2) div img{
+        max-width: 320px;
+    }
+    
+    
+    .facility > div:nth-child(3){
+        width: 100%;
+    }
+    .facility > div:nth-child(3)> div{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 0 2rem 0;
+    }
+    .marginBottom{
+        margin-bottom: 5rem;
+    }
+    .facility > div:nth-child(3) > div p{
+        font-size: 18px;
+    }
+    
+
+
+   
+
+}

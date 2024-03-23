@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../Styles/Navbar.css";
 import { Fade as Hamburger } from "hamburger-react";
+import HamburgerMenu from "./ReactHemburger";
 
 function Navbar() {
   const [isOpen, setOpen] = useState(false);
@@ -14,6 +15,7 @@ function Navbar() {
     <div className="Navbar">
       <div className="logo">
         <Link to="/">Pathshala</Link>
+        {/* <HamburgerMenu /> */}
       </div>
       <Hamburger
         className={`menu-toggle ${isOpen ? "open" : ""}`}

@@ -23,9 +23,7 @@ const HomePage = () => {
       </div>
       <div className="aboutus safety-img">
         <div>
-          <div>
-            <img src={safetyPic} alt="beSafe" />
-          </div>
+          <img src={safetyPic} alt="beSafe" />
         </div>
         <div>
           <div>

@@ -86,6 +86,40 @@
     width: 50%;
 }
 
+.approach{
+    width: 95%;
+    margin: 1.5rem auto auto auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.approachCards{
+    position: relative;
+    width: 100%;
+    /* border: 1px solid red; */
+    /* opacity: 0.1; */
+}
+.approachCards > img{
+    width: 100%;
+}
+.imgOpacity{
+    opacity: 0;
+}
+.approachCards > div{
+    width: 100%;
+    line-height: 25px;
+    width: 50%;
+    padding: 40px;
+    position: absolute;
+    top: 20px;
+} 
+.whiteFont{
+    color: var(--font--color2);
+}
+.allignRight{
+  display: flex;
+  justify-content: center;
+}
+
 @media (max-width: 1024px) {
 
     .aboutus {
@@ -118,4 +152,19 @@
     .aboutus >div:nth-child(2){
         font-size: small;
     }
+    .approach{
+        width: 100%;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .approachCards{
+        margin: 0;
+    }
+    .approachCards > div{
+        width: 80%;
+        padding: 10px;
+        position: absolute;
+    } 
+
 }

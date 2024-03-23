@@ -86,6 +86,54 @@
     width: 50%;
 }
 
+.approach{
+    width: 95%;
+    margin: 1.5rem auto auto auto;
+}
+
+.approachDetails{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* width: 100%; */
+}
+
+.approachHeading{
+    color: var(--homePage-textColor);
+}
+
+
+.approachImg1{
+    background-image: url(../assets/approach1.png);
+}
+
+.approachImg2{
+    background-image: url(../assets/approach2.png);
+}
+
+.backgroundImg{
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    height: 100%;
+}
+
+.btnOnImg{
+    background-color: transparent;
+    color: white;
+}
+
+.btnOnImg:hover{
+    background-color: transparent;
+}
+
+.admission{
+    background-color: var(--bgcolor);
+    text-align: center;
+}
+
 @media (max-width: 1024px) {
 
     .aboutus {
@@ -118,4 +166,15 @@
     .aboutus >div:nth-child(2){
         font-size: small;
     }
+
+    .approachDetails{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
+    }
+
+    .approachDetails > div{
+        margin: auto;
+    }
+
 }

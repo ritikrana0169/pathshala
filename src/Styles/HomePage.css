@@ -14,7 +14,7 @@
 }
 
 .aboutus > div:nth-child(1){
-    width: 70%;
+    width: 60%;
 }
 
 .aboutus > div:nth-child(1) > img{
@@ -22,15 +22,18 @@
 }
 
 .aboutus > div:nth-child(2){
-    width: 30%;
+    width: 40%;
     /* text-align: center; */
     /* border: 2px solid red; */
     background-color: var(--bgcolor);
+    /* display: flex; */
+    /* justify-content: center; */
+    text-align: center;
 }
 
 .aboutus > div:nth-child(2) > div{
     width: 70%;
-    margin: auto;
+    margin: 20vh auto;
 }
 
 .aboutus > div:nth-child(2) h1, .aboutus > div:nth-child(2) h3{
@@ -64,6 +67,9 @@
     background-color: var(--blur-bg);
     /* align-content: center; */
     height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .safety-img > div:nth-child(2){
@@ -76,8 +82,8 @@
     /* margin: 30% auto auto auto; */
 }
 
-.safety-img > div:nth-child(1) > div > img{
-    width: 100%;
+.safety-img > div:nth-child(1) > img{
+    width: 50%;
 }
 
 @media (max-width: 1024px) {

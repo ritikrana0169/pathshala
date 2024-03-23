@@ -3,6 +3,9 @@ import "../Styles/Mentors.css";
 import aboutschool from "../assets/aboutschool1.jpg";
 import principal from "../assets/principal.jpg";
 import mission from "../assets/mission.jpg";
+import teacher1 from "../assets/teacher1.jpg";
+import teacher2 from "../assets/teacher2.jpg";
+import teacher4 from "../assets/teacher4.jpg";
 const Mentors = () => {
   return (
     <div>
@@ -48,6 +51,64 @@ const Mentors = () => {
 
       </div>
 
+<div className="faculty">
+  <span>
+  <h1>Faculty & Mentors</h1>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, reprehenderit.
+  </p>
+  </span>
+  <div className="cards">
+  <div className="card">
+  <img src={principal} alt="" srcset="" />
+  <div className="blue whiteFont">
+    <h1>Emily Cole</h1>
+    <h3>Head of School</h3>
+  </div>
+</div>
+<div className="card">
+  <img src={principal} alt="" srcset="" />
+  <div className="blueBlur">
+    <h1>Emily Cole</h1>
+    <h3>Head of School</h3>
+  </div>
+</div>
+<div className="card">
+  <img src={teacher1} alt="" srcset="" />
+  <div className="red whiteFont">
+    <h1>Emily Cole</h1>
+    <h3>Head of School</h3>
+  </div>
+</div>
+<div className="card">
+  <img src={teacher2} alt="" srcset="" />
+  <div className="blueBlur">
+    <h1>Emily Cole</h1>
+    <h3>Head of School</h3>
+  </div>
+</div>
+<div className="card">
+  <img src={teacher4} alt="" srcset="" />
+  <div className="blue whiteFont">
+    <h1>Emily Cole</h1>
+    <h3>Head of School</h3>
+  </div>
+</div>
+<div className="card">
+  <img src={principal} alt="" srcset="" />
+  <div className="blueBlur">
+    <h1>Emily Cole</h1>
+    <h3>Head of School</h3>
+  </div>
+</div>
+<div className="card">
+  <img src={teacher4} alt="" srcset="" />
+  <div className="red whiteFont">
+    <h1>Emily Cole</h1>
+    <h3>Head of School</h3>
+  </div>
+</div>
+  </div>
+</div>
 
 
 

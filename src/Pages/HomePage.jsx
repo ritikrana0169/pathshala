@@ -5,6 +5,7 @@ import studentPic from "../assets/students.png";
 import safetyPic from "../assets/safety.png";
 import approachImg3 from "../assets/approach3.png";
 import approachImg4 from "../assets/approach4.png";
+import why1 from "../assets/why1.jpg";
 
 const HomePage = () => {
   return (
@@ -39,55 +40,88 @@ const HomePage = () => {
         </div>
       </div>
       <div className="approach">
-        <div className="approachHeading">
-          <h1>Why Stanford Elementary</h1>
+        <div className="approachCards whiteFont">
+          <img src={why1} alt="Error" />
+          <div>
+            <h2>Our Aproach</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+              illum explicabo. Doloremque beatae earum temporibus harum, illum
+              dolorum quam facere!
+            </p>
+            <Link to="/mentors">
+              <button>About Our School</button>
+            </Link>
+          </div>
         </div>
-        <div className="approachDetails">
-          <div className="approachImg1 backgroundImg">
-            <h3>OUR APPROACH</h3>
-            <p>
-              I'm a paragraph. Click here to add your own text and edit me. Let
-              your users get to know you.
-            </p>
-            <button className="aboutUsBtn btnOnImg">Learn More</button>
-          </div>
-          <div className="admission">
-            <h3>ADDMISSION</h3>
-            <p>
-              I'm a paragraph. Click here to add your own text and edit me. Let
-              your users get to know you.
-            </p>
-            <button className="aboutUsBtn">Learn More</button>
-          </div>
-          <div className="approachImg2 backgroundImg">
-            <h3>Enhance Learning</h3>
-            <p>
-              I'm a paragraph. Click here to add your own text and edit me. Let
-              your users get to know you.
-            </p>
-            <button className="aboutUsBtn btnOnImg">Learn Programs</button>
-          </div>
-          <div className="admission">
-            <h3>Latest News & Events</h3>
-            <p>
-              I'm a paragraph. Click here to add your own text and edit me. Let
-              your users get to know you.
-            </p>
-            <button className="aboutUsBtn">View All</button>
-          </div>
+        <div className="approachCards allignRight red">
+          <img className="imgOpacity" src={why1} alt="Error" />
           <div>
-            <img src={approachImg3} alt="" />
-          </div>
-          <div className="admission">
-            <h3>For the Parents</h3>
+            <h2>Addmission</h2>
             <p>
-              I'm a paragraph. Click here to add your own text and edit me. Let
-              your users get to know you.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+              illum explicabo. Doloremque beatae earum temporibus harum, illum
+              dolorum quam facere!
             </p>
-            <button className="aboutUsBtn">Get Informed</button>
+            <Link to="/contactus">
+              <button>Connect</button>
+            </Link>
           </div>
+        </div>
+        <div className="approachCards allignRight blue whiteFont">
+          <img className="imgOpacity" src={why1} alt="Error" />
           <div>
-            <img src={approachImg4} alt="" />
+            <h2>Addmission</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+              illum explicabo. Doloremque beatae earum temporibus harum, illum
+              dolorum quam facere!
+            </p>
+            <Link to="/contactus">
+              <button>Connect</button>
+            </Link>
+          </div>
+        </div>
+        <div className="approachCards whiteFont">
+          <img src={why1} alt="Error" />
+          <div>
+            <h2>Our Aproach</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+              illum explicabo. Doloremque beatae earum temporibus harum, illum
+              dolorum quam facere!
+            </p>
+            <Link to="/mentors">
+              <button>About Our School</button>
+            </Link>
+          </div>
+        </div>
+        <div className="approachCards whiteFont">
+          <img src={why1} alt="Error" />
+          <div>
+            <h2>Our Aproach</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+              illum explicabo. Doloremque beatae earum temporibus harum, illum
+              dolorum quam facere!
+            </p>
+            <Link to="/mentors">
+              <button>About Our School</button>
+            </Link>
+          </div>
+        </div>
+        <div className="approachCards allignRight red whiteFont">
+          <img className="imgOpacity" src={why1} alt="Error" />
+          <div>
+            <h2>Addmission</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+              illum explicabo. Doloremque beatae earum temporibus harum, illum
+              dolorum quam facere!
+            </p>
+            <Link to="/contactus">
+              <button>Connect</button>
+            </Link>
           </div>
         </div>
       </div>

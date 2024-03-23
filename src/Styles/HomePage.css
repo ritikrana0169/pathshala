@@ -89,49 +89,35 @@
 .approach{
     width: 95%;
     margin: 1.5rem auto auto auto;
-}
-
-.approachDetails{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    /* width: 100%; */
+    grid-template-columns: repeat(2,1fr);
 }
-
-.approachHeading{
-    color: var(--homePage-textColor);
+.approachCards{
+    position: relative;
+    width: 100%;
+    /* border: 1px solid red; */
+    /* opacity: 0.1; */
 }
-
-
-.approachImg1{
-    background-image: url(../assets/approach1.png);
+.approachCards > img{
+    width: 100%;
 }
-
-.approachImg2{
-    background-image: url(../assets/approach2.png);
+.imgOpacity{
+    opacity: 0;
 }
-
-.backgroundImg{
-    background-color: #cccccc;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-    text-align: center;
-    height: 100%;
+.approachCards > div{
+    width: 100%;
+    line-height: 25px;
+    width: 50%;
+    padding: 40px;
+    position: absolute;
+    top: 20px;
+} 
+.whiteFont{
+    color: var(--font--color2);
 }
-
-.btnOnImg{
-    background-color: transparent;
-    color: white;
-}
-
-.btnOnImg:hover{
-    background-color: transparent;
-}
-
-.admission{
-    background-color: var(--bgcolor);
-    text-align: center;
+.allignRight{
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 1024px) {
@@ -166,15 +152,19 @@
     .aboutus >div:nth-child(2){
         font-size: small;
     }
-
-    .approachDetails{
+    .approach{
+        width: 100%;
+        margin: 0;
         display: grid;
         grid-template-columns: repeat(1,1fr);
-        width: 100%;
     }
-
-    .approachDetails > div{
-        margin: auto;
+    .approachCards{
+        margin: 0;
     }
+    .approachCards > div{
+        width: 80%;
+        padding: 10px;
+        position: absolute;
+    } 
 
 }

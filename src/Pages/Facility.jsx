@@ -29,7 +29,7 @@ const Facility = () => {
 
 
     <div className="facility">
-      <div>
+      <div className="red">
         <div>
           <h1>
             Online Classes for All
@@ -50,8 +50,8 @@ const Facility = () => {
       </div>
     </div>
 
-    <div className="facility blue marginTop">
-      <div>
+    <div className="facility marginTop">
+      <div className="blue">
         <div>
           <h1>
           Pre-K and K
@@ -73,7 +73,7 @@ const Facility = () => {
     </div>
 
     <div className="facility marginTop">
-      <div>
+      <div className="red">
         <div>
           <h1>
           Grades 1-4
@@ -94,8 +94,8 @@ const Facility = () => {
       </div>
     </div>
 
-    <div className="facility blue marginTop marginBottom ">
-      <div>
+    <div className="facility marginTop marginBottom ">
+      <div className="blue">
         <div>
           <h1>
           Grades 5-8
